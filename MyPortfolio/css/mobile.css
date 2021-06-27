@@ -1,0 +1,111 @@
+.logo{
+    font-family: 'Lucida Sans';
+    font-size: 18px;
+    left:500px;
+    font-weight: bolder;
+    padding-right:0.3rem;
+    text-shadow: 0.3rem 0.3rem rgb(134, 172, 202);
+   
+   /* transition:all 1s ease-in-out;*/
+    color:var(--secondary-color);
+   
+  }
+  
+  .logo:hover {
+    color:var(--primary-color);
+   /* text-shadow: 0.3rem 0.3rem rgb(185, 181, 181);*/
+  
+  
+  }
+  
+  #navbar ul, #navbar ul li {
+    float: none;
+  }
+  
+  #navbar ul li a {
+      color: black;
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+ 
+
+  #showcase .showcase-content {
+    display: flex;
+    float:right;
+    
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 2rem;
+     /* Overlay */
+  position: relative;
+  top: 65px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  /*background-color: rgba(0,0,0,0.4);*/
+  
+   
+  }
+  /* about Info */
+.text-primary {
+    color: #5e5750;
+  }
+  #about-info {
+    height: 100vh;
+    display: flex;
+    
+    width: 100%;
+  }
+  
+  #about-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/img4.jpg') no-repeat center center/cover;
+    height: 100%;
+    margin-left: 0%;
+    opacity: 0.9;
+  
+  }
+  
+  #about-info .info-content{
+      color: honeydew;
+    float: right;
+    width:50%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    overflow: hidden;
+    background-color:rgba(3, 3, 3, 0.9)
+  }
+  
+  #about-info .info-content p{
+      font-size: 14px;
+      padding-top: 10px;
+  }
+
+  /* work page
+
+  
+  #main-header {
+    background-image: url(/img/img2.jpg);
+    padding: 2rem 0;
+  }
+  
+  #main-header .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #main-header h1 {
+    font-size: 2.3rem;
+  }
+  
+  #timeline ul{
+     
+    background: var(--primary-color);
+    padding: 50px 0;
+  } */
+  
