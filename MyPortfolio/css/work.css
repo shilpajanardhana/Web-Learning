@@ -11,29 +11,32 @@
   }
   
   body {
-    font: normal 1rem/1.5 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
     background: url('../img/img8.jpg') no-repeat center center/cover;
     color: #fff;
     overflow-x: hidden;
     padding-bottom: 50px;
     
   }
-
-  #navbar .logo{
-    font-family: 'Lucida Sans';
-    font-size: 25px;
+  .logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    font-style: italic;
     font-weight: bolder;
-    padding-left: 10px;
-    text-shadow: 0.3rem 0.3rem rgb(134, 172, 202);
-    margin-right: 3rem;
-    /*transition:all 1s ease-in-out;*/
-    color:var(--secondary-color);
-   
+    text-shadow: 0.1rem 0.1rem rgb(214, 219, 224);
+    margin-right: 5rem;
+    transition:all 1s ease-in-out;
+    color:blue;
+    text-decoration: none;
   }
   
   .logo:hover {
-    color:var(--primary-color);
- }
+    color:rgb(114, 125, 187);
+    transform: rotate(360deg); 
+    /* transform: skew(25deg); */
+   }
+
 
 
   /* Navbar */
@@ -83,17 +86,14 @@
   }
   
   
-  
-  #main-header {
-    background-image: url(/img/img2.jpg);
-    padding: 2rem 0;
-  }
+
   
   #timeline .container {
-  /*  max-width: var(--max-width);*/
- 
-    margin:auto;
+    max-width: var(--max-width);
+    
+    margin:auto; 
     text-align: center;
+   
   }
   
   h1 {

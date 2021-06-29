@@ -18,23 +18,25 @@ body {
   line-height: 1.4;
 }
 
-/*logo*/
+
 .logo{
-  font-family: 'Lucida Sans';
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
+  font-style: italic;
   font-weight: bolder;
   text-shadow: 0.1rem 0.1rem rgb(214, 219, 224);
-  margin-right: 10rem;
- /* transition:text 1s ease-in-out;*/
-  color:var(--secondary-color);
+  margin-right: 5rem;
+  transition:all 1s ease-in-out;
+  color:blue;
   text-decoration: none;
+
 }
 
 .logo:hover {
-  color:blanchedalmond;
- /* text-shadow: 0.3rem 0.3rem rgb(185, 181, 181);*/
-
-
-}
+  color:rgb(114, 125, 187);
+  transform: rotate(360deg);
+  /* transform: skew(25deg); */
+ }
 /* Navbar */
 #navbar {
   display: flex;
@@ -68,10 +70,10 @@ body {
   border-radius: 5px;
 }
 
-.currentpage {
+/* .currentpage {
   background-color: rgb(219, 129, 174);
   border-radius: 10%;
-}
+} */
 
 
 .l-heading {
@@ -91,40 +93,24 @@ body {
 #showcase {
   background: url('../img/img5.jpg') no-repeat center center/cover;
   height: 100vh;
-  color: #fff;
+  /* color: #fff; */
 }
 
 #showcase .showcase-content {
-  display: flex;
-  flex-direction: column;
-  
-  text-align:center;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  margin-top: auto;
+  padding: 20%;
   height: 100%;
-  padding: 0 2rem;
-
-  /* Overlay */
-  position: relative;
-  top: 65px;
-  left:0;
-  right: 0;
-  bottom: 0;
-  /*background-color: rgba(0,0,0,0.4);*/
+  color: rgb(37, 38, 39);
 }
 
-/*
-#showcase .showcase-content .item2{
-  width:50%;
-  float:right;
 
-}*/
 
 .btn {
   display: inline-block;
   color: #fff;
   background:var(--btn-color);
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 2rem;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -134,26 +120,10 @@ body {
   background: gray;
 }
 
-/*about showcase
-#showcaseabout{
-  background-color:gray;
-  height: 100vh;
-  color: #fff;
-}
 
-#showcaseabout .description {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: left;
-  align-items:left;
-  height: 100%;
-  padding: 0 2rem;
- 
-  
-}*/
 /* about Info */
 .text-primary {
+  padding: 10px;
   color:rgba(121, 114, 114, 0.9);
 }
 #about-info {
@@ -194,4 +164,31 @@ body {
   line-height: 2rem;
 }
 
-/*style for work page*/
+
+/* contact dropdown */
+
+
+.dropdownbtn{
+  color:black;
+  background:none;
+  border: none;
+  padding-left: 2px;
+  font-size: 18px;
+  
+  }
+
+  .dropdownbtn:hover{
+    background:none;
+    border: none;
+  color:gray;
+  
+  
+
+  }
+  .dropdown-menu{
+    background: rgb(214, 212, 212);
+  }
+
+
+
+
