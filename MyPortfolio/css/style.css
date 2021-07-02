@@ -35,7 +35,7 @@ body {
 .logo:hover {
   color:rgb(114, 125, 187);
   transform: rotate(360deg);
-  /* transform: skew(25deg); */
+  
  }
 /* Navbar */
 #navbar {
@@ -65,15 +65,9 @@ body {
 }
 
 #navbar ul li a:hover {
-  
   color: gray;
   border-radius: 5px;
 }
-
-/* .currentpage {
-  background-color: rgb(219, 129, 174);
-  border-radius: 10%;
-} */
 
 
 .l-heading {
@@ -93,7 +87,7 @@ body {
 #showcase {
   background: url('../img/img5.jpg') no-repeat center center/cover;
   height: 100vh;
-  /* color: #fff; */
+  
 }
 
 #showcase .showcase-content {
@@ -126,10 +120,10 @@ body {
   padding: 10px;
   color:rgba(121, 114, 114, 0.9);
 }
+
 #about-info {
   height: 100vh;
   display: flex;
-  
   width: 100%;
 }
 
@@ -152,9 +146,7 @@ body {
   text-align: left;
   padding-top:10px;
   overflow: hidden;
-  /*background: url('../img/img6.jpg') no-repeat center center/cover;*/
- 
-}
+  }
 
 #about-info .info-content p{
   font-size: 1rem;
@@ -180,13 +172,10 @@ body {
   .dropdownbtn:hover{
     background:none;
     border: none;
-  color:gray;
-  
-  
+    color:gray;
+    }
 
-  }
   .dropdown-menu{
-
     left:0;
     background: rgb(214, 212, 212);
     padding-left: 0;
@@ -195,6 +184,6 @@ body {
   .dropdown-item-text{
     width: 210px;
     padding-left:1px;
-  }s
+  }
 
 
