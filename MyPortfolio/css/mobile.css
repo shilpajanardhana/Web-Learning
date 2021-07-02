@@ -20,13 +20,12 @@
 
 
   #navbar ul, #navbar ul li {
-    padding-left:0;
+    padding-left: 0;
     float: left;
   }
   
   #navbar ul li a {
-  
-      color: black;
+    color: black;
     padding: 2px;
     
   }
@@ -38,7 +37,7 @@
     padding: 30%;
     height: 100%;
     color: rgb(37, 38, 39);
-  /*background-color: rgba(0,0,0,0.4);*/
+ 
   
    
   }
@@ -51,7 +50,6 @@
   #about-info {
     height: 100vh;
     display: flex;
-    
     width: 100%;
   }
   
@@ -66,8 +64,7 @@
   }
   
   #about-info .info-content{
-      color: honeydew;
-      
+    color: honeydew;
     float: right;
     width:50%;
     height: 100%;
@@ -79,8 +76,8 @@
   
   #about-info .info-content p{
     line-height: 1.5rem;
-      font-size: 14px;
-      padding-top: 10px;
+    font-size: 14px;
+    padding-top: 10px;
   }
 
   .foot{
