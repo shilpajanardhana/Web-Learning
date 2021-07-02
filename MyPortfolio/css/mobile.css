@@ -1,11 +1,27 @@
+
+.logo{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: bolder;
+  text-shadow: 0.1rem 0.1rem rgb(214, 219, 224);
+  margin-right: 1rem;
+  transition:all 1s ease-in-out;
+  color:blue;
+  text-decoration: none;
+
+}
 #navbar ul{
-  margin-left: 2px;
+  display: inline-flex;
+  margin-left:0;
+  padding-left:0;
+  position: relative;
 }
 
 
   #navbar ul, #navbar ul li {
-    
-    float: none;
+    padding-left:0;
+    float: left;
   }
   
   #navbar ul li a {

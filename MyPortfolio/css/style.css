@@ -186,9 +186,15 @@ body {
 
   }
   .dropdown-menu{
+
+    left:0;
     background: rgb(214, 212, 212);
+    padding-left: 0;
   }
 
-
+  .dropdown-item-text{
+    width: 210px;
+    padding-left:1px;
+  }s
 
 
