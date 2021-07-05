@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"> 
+
+
+
  
-  <title>My Portpolio| Welcome | </title>
+  <title>My Portpolio| Contact| </title>
+
+
 </head>
 <body>
- 
 
+   <header>
+     
     <nav id="navbar">
       <div>
         <h1 class="logo"><span style="color: black;"><i class="far fa-smile"></i>My</span>self</h1>
@@ -32,34 +37,60 @@
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="work.html">WORK</a></li>
           <li><a href="contact.html">CONTACT</a></li>
-          </a>
            
         </ul>
       </nav>
-      <!-- section: Showcase -->
-      <section id="showcase">
+  </header>
+<div class="contact-container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Leave me a message</p>
+  </div>
+  <div class="row">
+   
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<section id="contact-b" >
+  <div class="container">
+    <div class="contact-info">
+      <div>
+        <i class="fas fa-envelope fa-2x"></i>
+        <h3>Email</h3>
+        <p>shilpashree@something.com</p>
+      </div>
+      <div>
+        <i class="fas fa-phone fa-2x"></i>
+        <h3>Phone</h3>
+        <p>(+91) 9972xxxxxx</p>
+      </div>
+      <div>
+        <i class="fas fa-address-card fa-2x"></i>
+        <h3>Address</h3>
+        <p>Udupi, Karnataka</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="showcase-content">
-           
-            <h2 class="l-heading">
-                Hi, I am Shilpashree. 
-              </h2>
-              <p class="para">
-               Web Designing<br>seeking to learn more about web design..
-              </p>
-          <h2 class="l-heading">
-                My Moto 
-              </h2>
-              <p class="para">
-               Work Is Worship
-              </p>
- 
-              <a href="about.html" class="btn">Read More</a>
-          
-           
-        </div>
-    </section>
-      <!-- Footer -->
+  <!-- Footer -->
   <footer id="main-footer">
     <div class="footer-content contact-container">
       <p>Copyright &copy; 2019. All Rights Reserved</p>
@@ -71,7 +102,6 @@
       </div>
     </div>
   </footer>
-
 
 </body>
 </html>

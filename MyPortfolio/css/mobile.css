@@ -1,92 +1,161 @@
-
-.logo{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 38px;
+.logo {
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 30px; */
   font-style: italic;
   font-weight: bolder;
   text-shadow: 0.1rem 0.1rem rgb(214, 219, 224);
-  margin-right: 1rem;
-  transition:all 1s ease-in-out;
-  color:blue;
+  margin-right: 0;
+  transition: all 1s ease-in-out;
+  color: rgb(97, 5, 72);
   text-decoration: none;
-
 }
-#navbar ul{
+
+#navbar h1{
+  font-size: 20px;
+}
+#navbar ul {
   display: inline-flex;
-  margin-left:0;
-  padding-left:0;
+  
+  margin-left: 0;
+  padding-left: 0;
   position: relative;
 }
 
+#navbar ul,
+#navbar ul li {
+  font-size: 12px;
+  padding-left: 0;
+  float: right;
+}
 
-  #navbar ul, #navbar ul li {
-    padding-left:0;
-    float: left;
-  }
+#navbar ul li a {
   
-  #navbar ul li a {
-  
-      color: black;
-    padding: 2px;
-    
-  }
- 
+  color: black;
+  padding: 1px;
+} 
 
-  #showcase .showcase-content {
-    display: inline-block;
-    margin: auto;
-    padding: 30%;
-    height: 100%;
-    color: rgb(37, 38, 39);
+
+#showcase .showcase-content {
+  display: inline-block;
+  margin: auto;
+  padding: 30%;
+  height: 100%;
+  color: rgb(37, 38, 39);
   /*background-color: rgba(0,0,0,0.4);*/
-  
-   
-  }
-  /* about Info */
-   .text-primary {
-    color: #5e5750;
-  }
+}
+/* about Info */
+.text-primary {
+  color: #5e5750;
+}
 
+#about-info {
+  height: 100vh; 
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
 
-  #about-info {
-    height: 100vh;
-    display: flex;
+#about-info .info-img {
+  background: url("../img/img7.jpg") no-repeat center center/contain;
+  margin-left: 0%;
+  opacity: 0.9;
+}
+
+#about-info .info-content {
+  color: honeydew;
+  /* height: 100%; */
+  text-align: center;
+  padding: 2px 0px;
+  /* overflow: hidden; */
+}
+
+#about-info .info-content p {
+  line-height: 1rem;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+/* Contact */
+
+    @media (max-width: 500px) {
+     
+      #contact-b .contact-info {
+        grid-template-columns: 1fr; 
+      }
     
-    width: 100%;
-  }
-  
-  #about-info .info-img {
-    float: left;
-    width: 50%;
-    background: url('../img/img7.jpg') no-repeat center center/contain;
-    height: 50%;
-    margin-left: 0%;
-    opacity: 0.9;
-  
-  }
-  
-  #about-info .info-content{
-      color: honeydew;
-      
-    float: right;
-    width:50%;
-    height: 100%;
-    text-align: center;
-    padding: 10px 0px;
-    overflow: hidden;
-    
-  }
-  
-  #about-info .info-content p{
-    line-height: 1.5rem;
-      font-size: 14px;
-      padding-top: 10px;
+      #contact-b div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+       }
+
+        #contact-b div:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0; 
+        }
+     
+      #main-footer {
+        height: 7rem;
+       }
+
+        #main-footer .footer-content {
+          flex-direction: column;
+          padding: 1rem;
+          height: 5rem; 
+        }
+    }
+
+         
+         input[type="submit"]:hover {
+          background-color: gray;
+          color: white;
+         }
+
+/*work page*/
+@media (max-width: 900px) {
+  #timeline ul li:nth-child(1n + 1) div {
+    width: 250px;
   }
 
-  .foot{
-      float:right;
-
+  .imagesize {
+    width: 200px;
+    height: 100px;
   }
 
+  /* Right Side */
+  #timeline ul li:nth-child(odd) div {
+    left: 40px;
+  }
 
-  
+  /* Left Side */
+  #timeline ul li:nth-child(even) div {
+    left: -80px;
+    transform: translate(-200px, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 240px;
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+
+  .imagesize {
+    width: 150px;
+    height: 100px;
+  }
+}
